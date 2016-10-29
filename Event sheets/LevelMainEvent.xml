@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LevelMainEvent</name>
+    <events>
+        <variable constant="0" name="Cinématique1" sid="758130075279522" static="0" type="number">1</variable>
+        <include>HealEvent</include>
+        <include>LifeEvent</include>
+        <event-block sid="216190985725889">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="246959667655221" type="Player">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="478545512823228" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="285172361011115">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="999304763478822" type="Player" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="190891454234768" type="System" />
+                <action id="-9" name="Set value" sid="894137271541181" type="System">
+                    <param id="0" name="Variable">Cinématique1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="890054040849537">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="260371295614101" type="Player">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="459091877239179" type="System">
+                    <param id="0" name="Layout">Level1Passe</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="589806452639155">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="632983403007313" type="Player">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="581112911563089" type="System">
+                    <param id="0" name="Layout">Level1Futur</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="809098986299767">
+            <conditions>
+                <condition id="2" name="Has ended" sid="527774473668925" type="Cinématique1" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="766543268896577" type="Cinématique1" />
+                <action id="-9" name="Set value" sid="254758025217922" type="System">
+                    <param id="0" name="Variable">Cinématique1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="859843573412224" type="SkipText" />
+            </actions>
+        </event-block>
+        <event-block sid="791336073259315">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="131075194380120" type="System">
+                    <param id="0" name="Variable">Cinématique1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="374082778056113" type="Cinématique1" />
+                <action id="-9" name="Destroy" sid="295118163443327" type="SkipText" />
+            </actions>
+        </event-block>
+        <event-block sid="561070069019239">
+            <conditions>
+                <condition id="2" name="Key is down" sid="488604852774660" type="Keyboard">
+                    <param id="0" name="Key">32 (Espace)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="766538747898841" type="Cinématique1" />
+                <action id="-9" name="Destroy" sid="279298623184856" type="SkipText" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

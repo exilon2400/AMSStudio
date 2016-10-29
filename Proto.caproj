@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Proto</name>
+    <description>Proto</description>
+    <version>Alpha 1.0</version>
+    <author>Artech Studio</author>
+    <author-email>artechstudio@exilon2400.ovh</author-email>
+    <author-website>http://artectstudio.exilon2400.ovh/</author-website>
+    <app-id>fr.artechstudio.proto</app-id>
+    <unique-id>18gz7z526yt92</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="video" version="1">Video</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Title" sid="317812523085039">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground" sid="459076069776970">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\gamer\Pictures\texture\minecraft_tree_wood.jpg" />
+        </object-type>
+        <object-type name="PlayGameBTN" sid="155059016793449">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="932836388818179">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\gamer\Pictures\texture\minecraft_tree_wood.jpg" />
+        </object-type>
+        <object-type name="Sprite" sid="146602172853175">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="573717238112496">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="764726615668404" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gamer\Pictures\texture\blockDiamond_5342948.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player" sid="451418398402886">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="413121064450009">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="338913202705550">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="866823854564227">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="486415737301504">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="819949988677700" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gamer\Pictures\1\bleu.PNG" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="510342021109331">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Sprite2" sid="799442757322743">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="420036673469997">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="583188620203440" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gamer\Pictures\fanart\redstone_block.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="619776547019134">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="629133178140791">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="556283781371076" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gamer\Pictures\fanart\coal_block_zps9c7d49cf.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="637428410165113">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="874271155153898">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="948748709128340" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gamer\Pictures\fanart\tumblr_nsrxx7hUmG1s316v9o2_250.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="275652640860537">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="576272794279338">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="398404655077437" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gamer\Pictures\fanart\tumblr_nsrxx7hUmG1s316v9o2_250.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="439964899712556">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="770656509067009">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="640131844894441" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gamer\Pictures\fanart\redstone_block.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="315394574294723">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="963401850319104">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="440372937047786" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gamer\Pictures\fanart\coal_block_zps9c7d49cf.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="655368806229857">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="950973383378250" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gamer\Pictures\fanart\coal_block_zps9c7d49cf.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Timer" sid="900569397100902">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="447718058030006">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="heart1" sid="419492993394437">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="860228391794835">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="466258465842041" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gamer\Pictures\1\heart_pixelart.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.84375" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="heart2" sid="334662996980984">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="451688100571579">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="146618443885187" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gamer\Pictures\1\heart_pixelart.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.84375" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="heart3" sid="731193610910866">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="992399130795126">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="818275454129546" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gamer\Pictures\1\heart_pixelart.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.84375" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlayedGameTitle" sid="936877160021273">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="PlayedGame" sid="151337685688680">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Cinématique1" sid="716862074072223">
+            <plugin id="video" />
+        </object-type>
+        <object-type name="SkipText" sid="175367959262860">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="heal" sid="173715086101581">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="667951630036259">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="111686552386753" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502513" original-source="C:\Users\gamer\Pictures\1\heart.png">
+                        <collision-poly>
+                            <point x="0.210526" y="0.201005" />
+                            <point x="0.789474" y="0.201005" />
+                            <point x="0.878947" y="0.497487" />
+                            <point x="0.5" y="0.844221" />
+                            <point x="0.121053" y="0.497487" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>LevelMain.xml</layout>
+        <layout>Level1Futur.xml</layout>
+        <layout>Level1Passe.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>MenuEvent.xml</event-sheet>
+        <event-sheet>LevelMainEvent.xml</event-sheet>
+        <event-sheet>Level1FuturEvent.xml</event-sheet>
+        <event-sheet>Level1PasseEvent.xml</event-sheet>
+        <event-sheet>LifeEvent.xml</event-sheet>
+        <event-sheet>HealEvent.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="24" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="Cine.m4v" />
+    </files-folder>
+</c2project>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LifeEvent</name>
+    <events>
+        <variable constant="0" name="Life" sid="719390894585012" static="0" type="number">3</variable>
+        <event-block sid="883035779419623">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="758094108470671" type="System">
+                    <param id="0" name="Variable">Life</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="622445039927890" type="System">
+                    <param id="0" name="Variable">Life</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="607288604813248" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+                <action id="-10" name="Add to" sid="892987885427103" type="System">
+                    <param id="0" name="Variable">PlayedGame</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="665805632799221">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="174938319305838" type="System">
+                    <param id="0" name="Variable">Life</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="299078019092715" type="System">
+                    <param id="0" name="Variable">Life</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="245408356103026" type="heart1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="262649983159216" type="heart2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="330314388371210" type="heart3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="469673183851853">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="719412643215968" type="System">
+                    <param id="0" name="Variable">Life</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="186585306878634" type="System">
+                    <param id="0" name="Variable">Life</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="188709080933616" type="heart1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="209406098668968" type="heart2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="345475903012845" type="heart3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="994829106925360">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="557377918649038" type="System">
+                    <param id="0" name="Variable">Life</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="962695447577772" type="System">
+                    <param id="0" name="Variable">Life</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="278986188538279" type="heart1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="385508996603947" type="heart2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="486093743376193" type="heart3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="395800271773328">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="603989782414101" type="Player" />
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="394241055433296" type="System">
+                    <param id="0" name="Variable">Life</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

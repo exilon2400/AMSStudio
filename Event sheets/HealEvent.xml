@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>HealEvent</name>
+    <events>
+        <variable constant="0" name="UsedHeal" sid="538158407825452" static="0" type="number">0</variable>
+        <event-block sid="502682757782705">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="176232724919619" type="Player">
+                    <param id="0" name="Object">heal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="991576685833762" type="System">
+                    <param id="0" name="Variable">Life</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="923962715673687" type="heal" />
+                <action id="-9" name="Set value" sid="313415076573136" type="System">
+                    <param id="0" name="Variable">UsedHeal</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="776557038478592">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="165892373459729" type="System">
+                    <param id="0" name="Variable">Life</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="177867610641018" type="System">
+                    <param id="0" name="Variable">Life</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="612000068489537">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="727425603855800" type="System">
+                    <param id="0" name="Variable">UsedHeal</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="592219276183294" type="heal" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
