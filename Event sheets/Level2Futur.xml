@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level2Futur</name>
+    <events>
+        <include>HealEvent</include>
+        <include>LifeEvent</include>
+        <event-block sid="143007992784532">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="439050962022187" type="Player" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="761968003494776" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="174394411218811">
+            <conditions>
+                <condition id="2" name="Key is down" sid="342370605337639" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="942485836974390" type="Sprite6">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="647143930981234" type="Sprite5">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="278530594123071" type="Sprite6">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="900019945159539" type="Sprite5">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="372212093006372">
+            <conditions>
+                <condition id="2" name="Key is down" sid="587042376210146" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="814217108235111" type="Sprite6">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="913261767057030" type="Sprite5">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="230516029190795" type="Sprite6">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="556431979698770" type="Sprite5">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="982832399002091">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="835132306485113" type="Player">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="787222028776898" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

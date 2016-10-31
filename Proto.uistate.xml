@@ -10,15 +10,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">LevelMain</layout>
-        <layout active="1" order="4">Level1Futur</layout>
-        <layout order="7">Level1Passe</layout>
-        <layout order="8">Menu</layout>
-        <event-sheet order="2">LevelMainEvent</event-sheet>
-        <event-sheet order="3">HealEvent</event-sheet>
-        <event-sheet order="5">Level1FuturEvent</event-sheet>
-        <event-sheet order="6">LifeEvent</event-sheet>
-        <event-sheet order="9">MenuEvent</event-sheet>
+        <layout order="0">LevelMain</layout>
+        <layout order="3">Level1Futur</layout>
+        <layout order="6">Level1Passe</layout>
+        <layout order="7">Menu</layout>
+        <layout active="1" order="9">Level2Futur</layout>
+        <event-sheet order="1">LevelMainEvent</event-sheet>
+        <event-sheet order="2">HealEvent</event-sheet>
+        <event-sheet order="4">Level1FuturEvent</event-sheet>
+        <event-sheet order="5">LifeEvent</event-sheet>
+        <event-sheet order="8">MenuEvent</event-sheet>
+        <event-sheet order="10">Level2Futur</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -48,5 +50,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/heart2/" />
         <folder expanded="1" path="animation-folder/heart3/" />
         <folder expanded="1" path="animation-folder/heal/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
     </folders-expanded>
 </c2uistate>

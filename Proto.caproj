@@ -303,6 +303,17 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite9" sid="751435644580502">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="655377935237324" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="102068099005037">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -310,6 +321,7 @@
         <layout>LevelMain.xml</layout>
         <layout>Level1Futur.xml</layout>
         <layout>Level1Passe.xml</layout>
+        <layout>Level2Futur.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>MenuEvent.xml</event-sheet>
@@ -318,6 +330,7 @@
         <event-sheet>Level1PasseEvent.xml</event-sheet>
         <event-sheet>LifeEvent.xml</event-sheet>
         <event-sheet>HealEvent.xml</event-sheet>
+        <event-sheet>Level2Futur.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="24" />
